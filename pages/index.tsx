@@ -3,15 +3,13 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 
-
-interface Props {
-  exploreData : {
+interface props{
+  exploreData: {
     location: string;
   }[];
 }
 
-
-const Home: NextPage <Props> = (exploreData) => {
+const Home: NextPage<props> = ({exploreData}) => {
   return (
     <div className="">
       <Head>
@@ -35,12 +33,13 @@ const Home: NextPage <Props> = (exploreData) => {
   )
 }
 
+export default Home;
 export async function getStaticProps() {
   const exploreData = await fetch ('https://links.papareact.com/pyp').then((res) => res.json());
 
 
   return {
-    Props: {
+    props: {
       exploreData
     }
   }
