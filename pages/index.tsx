@@ -38,7 +38,7 @@ const Home: NextPage<props> = ({exploreData, cardsData}) => {
         <link rel="icon" href="https://www.citypng.com/public/uploads/preview/-316008155470z0f6if4ay.png" />
       </Head>
 
-      <Header/>
+      <Header placeholder={''}/>
       <Banner/>
 
       <main className='mx-[5%] px-8 sm:px-16 max-w-7xl'>
