@@ -49,6 +49,7 @@ function Header({placeholder}) {
                 src='https://links.papareact.com/qd3' 
                 layout='fill'
                 objectFit="contain" objectPosition="left"
+                alt="logo"
             />
         </div>
 
